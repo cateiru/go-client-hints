@@ -1,8 +1,13 @@
-# go-client-hints
+package main
 
-## Example
+import (
+	"fmt"
+	"net/http"
 
-```go
+	"github.com/cateiru/go-client-hints/ch"
+	"github.com/cateiru/go-client-hints/ch/headers"
+)
+
 func AnnounceHandler(w http.ResponseWriter, r *http.Request) {
 	announceHeaders := []string{
 		headers.SecChUa,
@@ -34,8 +39,3 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Unknown!")
 	}
 }
-```
-
-## LICENSE
-
-[MIT](./LICENSE)

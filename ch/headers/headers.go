@@ -1,4 +1,4 @@
-package ch
+package headers
 
 const (
 	// User agent client hints
@@ -13,7 +13,7 @@ const (
 	SecChUaPlatform        = "Sec-CH-UA-Platform"
 	SecChUaPlatformVarsion = "Sec-CH-UA-Platform-Version"
 
-	// Device client hints
+	// (Deprecated) Device client hints
 	// ref. https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#device_client_hints
 	ContentDPR    = "Content-DPR"
 	DeviceMemory  = "Device-Memory"
