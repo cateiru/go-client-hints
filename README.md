@@ -1,5 +1,11 @@
 # go-client-hints
 
+## Install
+
+```bash
+go get -u github.com/cateiru/go-client-hints
+```
+
 ## Example
 
 ```go
