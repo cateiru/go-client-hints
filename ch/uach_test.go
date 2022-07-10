@@ -60,8 +60,8 @@ func TestParseSecChUa(t *testing.T) {
 
 func TestMobile(t *testing.T) {
 	samples := map[string]ch.MobileType{
-		"!0":      ch.NoMobile,
-		"!1":      ch.Mobile,
+		"?0":      ch.NoMobile,
+		"?1":      ch.Mobile,
 		"":        ch.Unknown,
 		"nyancat": ch.Unknown,
 	}

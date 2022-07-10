@@ -45,10 +45,10 @@ func ParseSecChUa(chUa string) map[string]string {
 // 	mobileType := ch.ParseChUaMobile(chUaMobile)
 func ParseChUaMobile(chUaMobile string) MobileType {
 
-	if chUaMobile == "!0" {
+	if chUaMobile == "?0" {
 		return NoMobile
 	}
-	if chUaMobile == "!1" {
+	if chUaMobile == "?1" {
 		return Mobile
 	}
 
