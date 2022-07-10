@@ -39,10 +39,10 @@ func TestAnnounce(t *testing.T) {
 	require.NoError(t, err)
 
 	h := resp.Header.Get("Accept-CH")
-	require.Equal(t, h, "Sec-CH-UA, Sec-CH-UA-Mobile")
+	require.Equal(t, h, "Sec-Ch-Ua, Sec-Ch-Ua-Mobile")
 
 	v := resp.Header.Get("Vary")
-	require.Equal(t, v, "Sec-CH-UA, Sec-CH-UA-Mobile")
+	require.Equal(t, v, "Sec-Ch-Ua, Sec-Ch-Ua-Mobile")
 }
 
 func TestAnnounceNoVary(t *testing.T) {
@@ -52,7 +52,7 @@ func TestAnnounceNoVary(t *testing.T) {
 	require.NoError(t, err)
 
 	h := resp.Header.Get("Accept-CH")
-	require.Equal(t, h, "Sec-CH-UA, Sec-CH-UA-Mobile")
+	require.Equal(t, h, "Sec-Ch-Ua, Sec-Ch-Ua-Mobile")
 
 	v := resp.Header.Get("Vary")
 	require.Empty(t, v)
