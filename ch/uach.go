@@ -1,7 +1,8 @@
 package ch
 
 import (
-	"strings"
+	"fmt"
+	"regexp"
 )
 
 type MobileType int
@@ -23,15 +24,15 @@ func ParseSecChUa(chUa string) map[string]string {
 		return map[string]string{}
 	}
 
-	brandsBuf := strings.Split(chUa, ", ")
+	r := regexp.MustCompile(`"([^"]+)";v="([0-9.]+)"(,\s?)?`)
+
+	brandsBuf := r.FindAllStringSubmatch(chUa, -1)
 	brands := make(map[string]string)
 
-	for _, brand := range brandsBuf {
-		c := strings.Split(brand, ";v=")
+	fmt.Println(brandsBuf)
 
-		if len(c) == 2 {
-			brands[c[0][1:len(c[0])-1]] = c[1][1 : len(c[1])-1]
-		}
+	for _, brand := range brandsBuf {
+		brands[brand[1]] = brand[2]
 	}
 
 	return brands
