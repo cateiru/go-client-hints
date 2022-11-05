@@ -1,23 +1,14 @@
-# Go Client Hints
+package example
 
-## Install
-
-```bash
-go get -u github.com/cateiru/go-client-hints
-```
-
-## Parse Client Hints
-
-```go
 import (
 	"fmt"
 	"net/http"
 
-	goclienthints "github.com/cateiru/go-client-hints"
+	clienthint "github.com/cateiru/go-client-hints"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	clientHints, err := goclienthints.Parse(&r.Header)
+	clientHints, err := clienthint.Parse(&r.Header)
 	if err != nil {
 		return
 	}
@@ -48,27 +39,3 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	// Sec-Ch-Ua-Full-Version filed
 	fmt.Println("Full Version: ", clientHints.FullVersion)
 }
-
-```
-
-## Check Support Client Hints
-
-```go
-import (
-	"net/http"
-
-	clienthint "github.com/cateiru/go-client-hints"
-)
-
-func Handler2(w http.ResponseWriter, r *http.Request) {
-	isSupport := clienthint.IsSupportClientHints(&r.Header)
-
-	if isSupport {
-		// ...do something
-	}
-}
-```
-
-## LICENSE
-
-[MIT](./LICENSE)

@@ -37,6 +37,7 @@ type ClientHints struct {
 	// Sec-CH-UA-Model filed
 	Model string `json:"model,omitempty"`
 
+	// Sec-Ch-Ua-Full-Version filed
 	FullVersion string `json:"full_version,omitempty"`
 }
 
