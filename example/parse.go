@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	clienthint "github.com/cateiru/go-client-hints"
+	clienthint "github.com/cateiru/go-client-hints/v2"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {

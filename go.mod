@@ -1,4 +1,4 @@
-module github.com/cateiru/go-client-hints
+module github.com/cateiru/go-client-hints/v2
 
 go 1.19
 

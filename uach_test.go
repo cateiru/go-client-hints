@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	goclienthints "github.com/cateiru/go-client-hints"
+	goclienthints "github.com/cateiru/go-client-hints/v2"
 	"github.com/stretchr/testify/require"
 )
 
