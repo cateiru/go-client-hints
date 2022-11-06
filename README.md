@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-go get -u github.com/cateiru/go-client-hints
+go get -u github.com/cateiru/go-client-hints/v2
 ```
 
 ## Parse Client Hints
@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"net/http"
 
-	goclienthints "github.com/cateiru/go-client-hints"
+	goclienthints "github.com/cateiru/go-client-hints/v2"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
@@ -57,7 +57,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 import (
 	"net/http"
 
-	clienthint "github.com/cateiru/go-client-hints"
+	clienthint "github.com/cateiru/go-client-hints/v2"
 )
 
 func Handler2(w http.ResponseWriter, r *http.Request) {
