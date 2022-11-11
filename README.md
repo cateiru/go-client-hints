@@ -1,3 +1,6 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/cateiru/go-client-hints/v2.svg)](https://pkg.go.dev/github.com/cateiru/go-client-hints/v2)
+[![Go](https://github.com/cateiru/go-client-hints/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/cateiru/go-client-hints/actions/workflows/go.yml)
+
 # Go Client Hints
 
 ## Install
