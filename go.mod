@@ -1,10 +1,10 @@
 module github.com/cateiru/go-client-hints/v2
 
-go 1.19
+go 1.20
 
 require (
-	github.com/dunglas/httpsfv v1.0.0
-	github.com/stretchr/testify v1.8.1
+	github.com/dunglas/httpsfv v1.0.1
+	github.com/stretchr/testify v1.8.2
 )
 
 require (
