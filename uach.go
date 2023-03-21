@@ -78,8 +78,16 @@ var PrimaryBrands = []string{
 	"Edge",
 	"Brave Browser",
 	"Brave",
+	"Yandex Browser",
 	"Yandex",
 	"CocCoc",
+	"Opera",
+	"Vivaldi",
+	"SRWare Iron",
+	"Epic Privacy Browser",
+	"Comodo Dragon",
+	"Torch Browser",
+	"Samsung",
 }
 
 // This array will be used to try to get the brand name
